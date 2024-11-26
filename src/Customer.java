@@ -29,23 +29,23 @@ public class Customer {
                 System.out.println("Last name cannot be empty. Please try again.");
             }
 
-//            do {
-//                System.out.print("Enter first name for customer " + (i + 1) + ": ");
-//                firstName = scanner.nextLine();
-//                firstName = firstName.trim();
-//                if (firstName.isEmpty()) {
-//                    System.out.println("First name cannot be empty. Please try again.");
-//                }
-//            } while (firstName.isEmpty());
-//
-//            do {
-//                System.out.print("Enter last name for customer " + (i + 1) + ": ");
-//                lastName = scanner.nextLine();
-//                lastName = lastName.trim();
-//                if (lastName.isEmpty()) {
-//                    System.out.println("Last name cannot be empty. Please try again.");
-//                }
-//            } while (lastName.isEmpty());
+            do {
+                System.out.print("Enter first name for customer " + (i + 1) + ": ");
+                firstName = scanner.nextLine();
+                firstName = firstName.trim();
+                if (firstName.isEmpty()) {
+                    System.out.println("First name cannot be empty. Please try again.");
+                }
+            } while (firstName.isEmpty());
+
+            do {
+                System.out.print("Enter last name for customer " + (i + 1) + ": ");
+                lastName = scanner.nextLine();
+                lastName = lastName.trim();
+                if (lastName.isEmpty()) {
+                    System.out.println("Last name cannot be empty. Please try again.");
+                }
+            } while (lastName.isEmpty());
             customers[i] = firstName + " " + lastName;
         }
     }
